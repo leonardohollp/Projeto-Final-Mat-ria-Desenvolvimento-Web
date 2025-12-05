@@ -194,5 +194,6 @@ Autores e links
   Leonardo Pavão:
   https://github.com/leonardohollp
   Lucas Ramos:
-  
+  Ainda há ser criado
   Maicon Amélio:
+  https://github.com/Maicon-Amelio
