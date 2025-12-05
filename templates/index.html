@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+
+    <title>login</title>
+</head>
+
+<body>
+    <main class="container">
+        <form action="/login" method="post">
+
+            <h1>Login</h1>
+
+            <div class="imput-box">
+                <input placeholder="Nome do Usuario" name="username_login" type="text">
+                <i class="bx bxs-user"></i>
+            </div>
+
+            <div class="imput-box">
+                <input placeholder="Senha" name="senha_login" type="password">
+                <i class="bx bxs-lock-alt"></i>
+            </div>
+
+            <div class="lembrar-senha">
+                <label>
+                    <input type="checkbox">
+                    Lembrar senha
+                </label>
+                <a href="#">Esqueci minha senha</a>
+            </div>
+
+            <button type="submit" class="login">Login</button>
+
+            <div class="registro-link">
+                <a href="{{ url_for('cadastro_page') }}">Cadastre-se</a>
+            </div>
+
+        </form>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/stylecadastro.css') }}">
+
+
+    <title>cadastro</title>
+</head>
+
+<body>
+    <main class="container">
+        <form action="/cadastro" method="POST">
+
+            <h1>Cadastrar-se</h1>
+
+            <div class="imput-box">
+                <input placeholder="Nome de usuário" type="text" name="username_cadastro" required>
+                <i class="bx bxs-user"></i>
+            </div>
+
+            <div class="imput-box">
+                <input placeholder="E-mail" type="email" name="email_cadastro" required>
+                <i class="bx bxs-envelope"></i>
+            </div>
+
+            <div class="imput-box">
+                <input placeholder="Senha" type="password" name="senha_cadastro" required>
+                <i class="bx bxs-lock-alt"></i>
+            </div>
+
+            <div class="imput-box">
+                <input placeholder="Confirmar senha" type="password" name="confirma_senha" required>
+                <i class="bx bxs-lock-alt"></i>
+            </div>
+
+            <button type="submit" class="login">Cadastrar</button>
+
+            <div class="registro-link">
+                <p>Já tem uma conta? <a href="{{ url_for('login_page') }}">Fazer login</a></p>
+
+            </div>
+
+        </form>
+    </main>
+</body>
+
+</html>
